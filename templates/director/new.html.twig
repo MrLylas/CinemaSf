@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<h1>Add a new director</h1>
+<div class="container">
+    {{ form_start(form, {'attr': {'class': 'person-form'}}) }}
+        {{ form_row(form.person.name) }}
+        {{ form_row(form.person.forename) }}
+        {{ form_row(form.person.birthdate) }}
+        {{ form_row(form.person.nationality) }}
+        {{ form_row(form.person.gender) }}
+        {{ form_row(form.person.poster) }}
+        {{ form_row(form.submit) }}
+    {{ form_end(form) }}
+</div>
+
+{% endblock %}

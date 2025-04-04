@@ -19,7 +19,7 @@ class Movie
     #[ORM\Column(length: 255)]
     private ?string $name = null;
 
-    #[ORM\Column]
+    #[ORM\Column(type: Types::DATE_IMMUTABLE)]
     private ?\DateTimeImmutable $created_at = null;
 
     #[ORM\Column]
